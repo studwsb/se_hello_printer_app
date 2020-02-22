@@ -11,4 +11,4 @@ test:
 	PYTHONPATH=. py.test  --verbose -s
 
 run:
-	workon wsb-simple-flask-app
+	PYTHONPATH=. FLASK_APP=hello_world flask run
