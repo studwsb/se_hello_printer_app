@@ -1,12 +1,12 @@
 FROM python:2.7
 
 
-AGR APP_DIR =/usr/src/hello_world_printer
+ARG APP_DIR=/usr/src/hello_world_printer
 
 
 WORKDIR /tmp
 ADD requirements.txt /tmp/requirements.txt
-RUN pip install -r /temp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 
 RUN mkdir -p $APP_DIR
